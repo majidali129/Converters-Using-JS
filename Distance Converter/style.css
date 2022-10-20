@@ -1,0 +1,102 @@
+*,::after,::before{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+html{
+    font-family: serif;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to right , rgba(231, 222, 184, 0.589),rgba(171, 218, 148, 0.459));
+    flex-direction: column;
+}
+.container h1{
+    font-size: 4vw;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+}
+
+.container .distanceBox{
+    /* border: 1px solid green; */
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(227, 233, 240, 0.425);
+
+    align-items: center;
+}
+.inputBox , .outputBox{
+    width: 45%;
+    margin: 0px 5px;
+}
+select , option , input{
+    width: 100%;
+}
+
+select{
+    background-color: aliceblue;
+    font-size: 2.8rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 0.5em ;
+
+}
+option {
+    font-size: 2rem;
+}
+input{
+    /* font-size: 5px; */
+    padding: 1em;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 3px;
+    outline: none;
+}
+
+
+@media (max-width:495px){
+    .container .distanceBox{
+        /* border: 1px solid green; */
+        /* width:100%;
+        height: 50vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(227, 233, 240, 0.425);
+        align-items: center;
+        flex-direction: column;
+    }
+    .inputBox , .outputBox{
+        width: 80%;
+        margin: 5px 0px;
+    }
+    /* input , select{
+        padding: 2px 1px;
+        font-size: 15px;
+    } */
+    
+    input{
+        margin: 0px 0px;
+        padding: 0.5em 0.5em;
+    }
+    option{
+        font-size: 1.5rem;
+        /* padding: ; */
+    }
+
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Weight Converter</h1>
+    <div class="container">
+        <div class="inputBox">
+            <select id="inputSelection">
+                <option value="ponds">Pond</option>
+                <option value="kg">Kilogram</option>
+                <option value="g">Gram</option>
+            </select>
+            <input type="number" id="userInput">
+        </div>
+        <div class="equality">=</div>
+        <div class="outputBox">
+            <select id="outputSelection">
+                <option value="ponds">Pond</option>
+                <option value="ounces">Ounces</option>
+                <option value="kg" selected>Kilogram</option>
+                <option value="g">Gram</option>
+                <option value="stones">Stones</option>
+            </select>
+            <input type="number" id="userOutput">
+        </div>
+    </div>
+</body>
+</html>

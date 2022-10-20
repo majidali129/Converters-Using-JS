@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Converter</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="distanceBox">
+            <div class="inputBox">
+                <select id="inputOption">
+                    <option value="meter" selected>Meter</option>
+                    <option value="centimeter" >Centimeter</option>
+                    <option value="Kilometer">Kilometer</option>
+                </select>
+                <input type="number" id="userInput">
+            </div>
+            <div class="outputBox">
+                <select id="outputOption">
+                    <option value="meter">Meter</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="Kilometer" selected>Kilometer</option>                </select>
+                <input type="number"  id="userOutput" readonly>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
